@@ -19,7 +19,7 @@ int check_cycle(listint_t *list)
 		if (i == j)
 			return (1);
 		i = i->next;
-		if (i == n)
+		if (i == j)
 			return (1);
 		j = j->next;
 	}
