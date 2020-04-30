@@ -6,5 +6,5 @@ if __name__ == "__main__":
         print('0 arguments.')
     else:
         print('{} arguments:'.format(number - 1))
-    for i in range(1, number):
+        for i in range(1, number):
         print('{}: {}'.format(i, argv[i]))
