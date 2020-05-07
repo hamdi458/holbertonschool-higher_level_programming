@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-x = 89
-y = 10
-x, y = y, x
-print("a={:d} - b={:d}".format(x, y))
+a = 89
+b = 10
+a, b = b, a
+print("a={:d} - b={:d}".format(a, b))
