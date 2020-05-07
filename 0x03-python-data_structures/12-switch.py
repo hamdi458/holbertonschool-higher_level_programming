@@ -3,4 +3,4 @@ x = 89
 y = 10
 x = y
 y = x
-print("x={:d} - y={:d}".format(x, y))
+print("a={:d} - b={:d}".format(x, y))
