@@ -41,8 +41,6 @@ int is_palindrome(listint_t **head)
 	}
 	if (l == 1)
 		return (0);
-	if (l == 0)
-		return (0);
 	start = *head;
 	end = *head;
 	for (i = 0; i < l / 2; i++)
