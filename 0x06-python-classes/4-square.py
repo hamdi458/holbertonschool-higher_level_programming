@@ -14,9 +14,6 @@ class Square:
         else:
             raise TypeError("size must be an integer")
 
-    def area(self):
-        return self.__size ** 2
-
     @property
     def size(self):
         """Get the current size"""
