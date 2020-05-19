@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class singly-linked list."""
+"""class singly-linked-list"""
 
 
 class Node:
