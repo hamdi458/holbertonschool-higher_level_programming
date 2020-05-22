@@ -1,0 +1,46 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+=========
+>>> add_integer(2, 3)
+    5
+>>> add_integer(3.5, 4)
+    7
+>>> add_integer(2, -3)
+    -1
+>>> add_integer(2.3, -3)
+    -1
+>>> add_integer(1)
+    99
+>>> add_integer(4.5, 3.8)
+    7
+==========
+>>> add_integer(3, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+=========
+>>> add_integer(None, 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+=========
+>>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+=========
+>>> add_integer('a', 'b')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+==========
+>>> add_integer('a', 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+===========
+>>> add_integer(1, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+===========
+>>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+=======
+>>> add_integer(1, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
