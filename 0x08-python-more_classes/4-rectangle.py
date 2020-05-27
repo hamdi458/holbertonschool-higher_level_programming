@@ -61,4 +61,5 @@ class Rectangle:
         return ch
 
     def __repr__(self):
+        """return a string"""
         return 'Rectangle({}, {})'.format(self.width, self.height)
