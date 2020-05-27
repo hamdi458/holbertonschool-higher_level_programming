@@ -8,9 +8,11 @@ class Rectangle:
     """Defines a Rectangle"""
 
     @property
+    """Returns: int: Recangle width"""
     def width(self):
         return self.__width
     @width.setter
+    """setters"""
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -19,6 +21,8 @@ class Rectangle:
         self.__width = value
 
     @property
+       """Returns:
+        int: Recangle's height"""
     def height(self):
         return self.__height
 
