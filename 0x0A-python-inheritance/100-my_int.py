@@ -11,4 +11,4 @@ class MyInt(int):
 
     def __ne__(self, value):
         """return true or false"""
-        return int(self) == other
+        return int(self) == int(other)
