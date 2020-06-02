@@ -5,10 +5,10 @@
 class MyInt(int):
     """class MyInt that inherits from int"""
 
-    def __eq__(self, value):
+    def __eq__(self, intnum):
         """return true or false"""
-        return self.real != value
+        return self.real != intnum
 
-    def __ne__(self, value):
+    def __ne__(self, intnum):
         """return true or false"""
-        return int(self) == int(other)
+        return self.real == intnum
