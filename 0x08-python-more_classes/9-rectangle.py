@@ -73,13 +73,14 @@ class Rectangle:
     def __repr__(self):
         """Return representation"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
     def __str__(self):
         """ print"""
         ch = ""
         if self.__width == 0 or self.__height == 0:
             return str
         ch += "\n".join(str(self.print_symbol) * self.__width
-                       for j in range(self.__height))
+                        for j in range(self.__height))
         return ch
 
     def __del__(self):
