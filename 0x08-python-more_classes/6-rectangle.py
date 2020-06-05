@@ -58,14 +58,12 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ch
         ch += "\n".join("#" * self.__width
-                         for j in range(self.__height))
+                        for j in range(self.__height))
         return ch
-
 
     def __repr__(self):
         """string"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
-
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
