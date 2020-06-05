@@ -22,6 +22,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     @property
     def position(self):
         """Get  position"""
