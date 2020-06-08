@@ -33,8 +33,6 @@ class Rectangle(Base):
         """get y"""
         return self.__y
 
-
-
     @width.setter
     def width(self, valeur):
         if type(valeur) is not int:
@@ -72,4 +70,10 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        print("\n".join("#" * self.width for i in range(self.height)))
+        print("\n" * self.y + "\n".join(" " * self.x + "#" * self.width
+                                        for i in range(self.height)))
+
+    def __str__(self):
+        """print."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
+                                                       self.width, self.height)
