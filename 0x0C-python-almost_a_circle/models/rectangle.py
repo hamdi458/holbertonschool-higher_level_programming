@@ -77,3 +77,31 @@ class Rectangle(Base):
         """print."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
                                                        self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        if args:
+            i = 0
+            for item in args:
+                if i == 0:
+                    self.id = item
+                if i == 1:
+                    self.width = item
+                if i == 2:
+                    self.height = item
+                if i == 3:
+                    self.x = item
+                if i == 4:
+                    self.y = item
+                i = i + 1
+        if kwargs:
+            for x, y in kwargs.items():
+                if x == 'id':
+                    self.id = y
+                if x == 'width':
+                    self.__width = y
+                if x == 'height':
+                    self.__height = y
+                if x == 'x':
+                    self.__x = y
+                if x == 'y':
+                    self.__y = y
