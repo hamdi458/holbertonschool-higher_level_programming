@@ -32,3 +32,11 @@ class Base:
             if list_objs is not None:
                 list = [item.to_dictionary() for item in list_objs]
             File.write(Base.to_json_string(list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None:
+            return []
+        import json
+        y = json.loads(json_string)
+        return y
