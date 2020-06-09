@@ -40,3 +40,13 @@ class Base:
         import json
         y = json.loads(json_string)
         return y
+
+    @classmethod
+    def create(cls, **dictionary):
+        if dictionary:
+            if cls.__name__ == "Rectangle":
+                nouveau_rec = cls(2,2)
+            else:
+                nouveau_rec = cls(2)
+            nouveau_rec.update(**dictionary)
+            return nouveau_rec
