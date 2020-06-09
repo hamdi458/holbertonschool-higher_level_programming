@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""class base"""
 class Base:
     """class base"""
     __nb_objects = 0
@@ -11,4 +12,3 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-            
