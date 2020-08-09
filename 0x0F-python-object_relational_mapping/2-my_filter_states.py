@@ -7,7 +7,7 @@ if __name__ == "__main__":
     cnx = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                           passwd=argv[2], db=argv[3])
     cursor = cnx.cursor()
-    cursor.execute("select * FROM states order by id")
+    cursor.execute("select * FROM states")
     lines = cursor.fetchall()
     for i in lines:
         if (i[1] == argv[4]):
