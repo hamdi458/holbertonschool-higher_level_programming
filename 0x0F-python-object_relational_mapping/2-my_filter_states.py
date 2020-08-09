@@ -8,7 +8,8 @@ if __name__ == "__main__":
                           passwd=argv[2], db=argv[3])
     cursor = cnx.cursor()
     cursor.execute(
-        "select * FROM states where name like binary'{}'order by id".format(argv[4]))
+        "select * FROM states where name \
+        like binary'{}'order by id".format(argv[4]))
     lines = cursor.fetchall()
     for i in lines:
         if (i[1] == argv[4]):
