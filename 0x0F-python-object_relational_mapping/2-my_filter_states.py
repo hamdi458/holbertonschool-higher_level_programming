@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script that lists all states from the database hbtn_0e_0_usa """
+""" script that takes in an argument and displays all values """
 import MySQLdb
 from sys import argv
 
@@ -9,8 +9,8 @@ if __name__ == "__main__":
     cursor = cnx.cursor()
     cursor.execute("select * FROM states order by id")
     lines = cursor.fetchall()
-    for x in lines:
-        if (x[1] == argv[4]):
-            print(x)
+    for i in lines:
+        if (i[1] == argv[4]):
+            print(i)
     cursor.close()
     cnx.close()
