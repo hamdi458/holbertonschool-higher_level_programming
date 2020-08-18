@@ -1,3 +1,3 @@
 #!/bin/bash
 # bash script
-curl -sI "$1" | grep [Cc]ontent-[Ll]ength: | awk '{ print $2 }'
+curl -sI "$1" | grep 'Content-Length:' | cut -d ' ' -f2
