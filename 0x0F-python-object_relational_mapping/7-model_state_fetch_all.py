@@ -14,6 +14,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     wiw = Session(engine)
 
-    for i in wiw.query(State).order_by(State.id).all:
+    for i in wiw.query(State).order_by(State.id):
         print("{}: {}".format(i.id, i.name))
     wiw.close()
